@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Nunito Sans;
+}
+
+.about__container {
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/bg-pattern.png");
+  filter: brightness(0.9);
+
+}
+
+.about__pm--wrapper {
+  text-align: center;
+}
+.about__image-animation{
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10vw;
+  height: 10vw;
+}
+.about__circle-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+.about__image-animation:hover {
+  left: 0;
+  bottom: 8px;  
+  box-shadow: 0px 1px 10px lightseagreen;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  width: 10vw;
+  height: 10vw;
+	border-radius: 50%;
+	overflow: hidden;
+  padding: 3px;
+	
+}
+
+.about__image-animation:hover::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #399953;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+    animation: rotate 4s linear infinite;
+}
+
+.about__image-animation:hover::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    /* width: calc(100% - 12px);
+    height: calc(100% - 12px); */
+    background: white;
+    border-radius: 5px;
+}
+/* .about__member--detail:hover{
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+  animation-name: rotate 4s linear infinite;
+} */
+	
+
+.about__role--font {
+  font-weight: bold;
+  text-align: center;
+}
+
+.about__pm__be__mobile--wrapper {
+  position: relative;
+  display: flex;
+  top: 15px;  
+}
+
+.about__department--wrapper {
+  width: 30%;
+  height: auto;
+}
+
+.about__department {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.about__department--wrapper {
+  width: 50%;
+  height: auto;
+}
+
+.about__map__fe__business--wrapper {
+  margin-top: 4%;
+  display: flex;
+}
+
+.about__member--detail {
+  width: 50%;
+  margin: 10px;
+}
+
+.about__member-name--font {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.about__underline--color {
+  height: 3px;
+  width: 6vw;
+  background-color: red;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+@keyframes about__left-animation {
+  0% {
+      left: -10%;
+      top: 0;
+  }
+
+  100% {
+      left: 0px;
+      top: 0px;
+  }
+}
+
+@keyframes about__right-animation {
+  0% {
+      right: -10%;
+      top: 0;
+  }
+
+  100% {
+      right: 0px;
+      top: 0px;
+  }
+}
+
+.about__left-animation  {
+  position: relative;
+  animation-name: about__left-animation;
+  animation-duration: 1s;
+}
+
+.about__right-animation {
+  position: relative;
+  animation-name: about__right-animation;
+  animation-duration: 1s;
+}
+
+@media (max-width: 991.98px) { 
+  .about__member-name--font {
+    font-size: 15px;
+  }
+    .about__pm__be__mobile--wrapper {
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .about__map__fe__business--wrapper {
+    display: block;
+  }
+  .about__department--wrapper {
+    width: 100%;
+  }
+}
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .about__member-name--font {
+    font-size: 13px;
+  }
+
+  .about__image-animation{
+    width: 20vw;
+    height: 20vw;
+  }
+  .about__image-animation:hover {
+    width: 20vw;
+    height: 20vw;
+    padding: 1%;
+  }
+}

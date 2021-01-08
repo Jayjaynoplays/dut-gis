@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Nunito Sans;
+
+}
+
+.contact__container {
+    text-align: center;
+    background-image: url("../assets/bg-pattern.png");
+    width: 100%;
+    height: auto;
+    
+}
+.contact__cards--wrapper {
+    display: flex;
+    position: relative;
+    width: auto;
+    height: 100vh;
+}
+
+.contact__card-detail--wrapper {
+    width: 20%;
+    height: 30vw;
+    opacity: 1;
+    margin-top: 5vh;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    border: whitesmoke;
+    box-shadow: 0px 3px 9px #00000029;
+    background-color: transparent;
+}
+.contact__card-detail--wrapper#address {
+    position: absolute; 
+    left: 5%; 
+    position: relative;
+}
+.contact__card-detail--wrapper#email {
+    position: absolute; 
+    right: 5% !important;  
+}
+.contact__icon {
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.contact__card-detail--background {
+    border-radius: 12px;
+    border: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/fun.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+}
+
+.contact__card-detail {
+    border-radius: 10px;
+    border: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.contact__card-detail:hover {
+    background-color: transparent;
+    color: white;
+    transition-duration: 1s;
+}
+
+.contact__card-title {
+    margin: 30px;
+    font-weight: 900;
+}
+#myCarousel{
+    position: absolute;
+    left: 30%;
+    width: 40%;
+    height: 30vw;
+    margin-top: 5vh;
+    border-radius:  10px;
+}
+@keyframes contact__left-animation {
+    0% {
+        left: 5%;
+        top: -5%;
+    }
+
+    100% {
+        left: 5%;
+        top: 0px;
+    }
+}
+
+@keyframes contact__right-animation {
+    0% {
+        right: 5%;
+        top: 5%;
+    }
+
+    100% {
+        right: 5%;
+        top: 0;
+    }
+    
+}
+
+.contact__left-animation  {
+    position: relative;
+    animation-name: contact__left-animation;
+    animation-duration: 1s;
+}
+
+.contact__right-animation {
+    position: relative;
+    animation-name: contact__right-animation;
+    animation-duration: 1s;
+}
+.contact__carousel-image{
+    border-radius: 12px;
+}
+@media (max-width: 991.98px) { 
+    .contact__card-detail--wrapper {
+        height: 40vw;
+        width: 20%;
+    }
+    .contact__card-detail{
+        font-size: 12px;
+    }
+    #myCarousel{
+        height: 40vw;
+    }
+    .contact__carousel-image{
+        height: 40vw !important;
+    }
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .contact__card-detail{
+        font-size: 10px;
+    }
+}
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .carousel-caption{
+        font-size: 11px;
+    }  
+    .contact__icon {
+        width: 20px;
+        height: 20px;
+    }    
+    .contact__card-title {
+        margin: 5px;        
+    }
+    .contact__card-detail--wrapper {
+        height: 40vw;
+        width: 60%;
+    }
+    .contact__card-detail{
+        font-size: 10px;
+    }
+    #myCarousel{
+        height: 40vw;
+    }
+    .contact__carousel-image{
+        height: 40vw !important;
+    }
+  
+    .contact__cards--wrapper {
+        display: block;
+    }
+    .contact__card-detail--wrapper#address {
+        position: relative;
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+    .contact__card-detail--wrapper#email {
+        position: relative;
+        left:50%; 
+        transform: translateX(-50%);        
+    }
+    #myCarousel{
+        width: 60%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);        
+    }
+    @keyframes contact__left-animation {
+        0% {
+            left: 50%;
+            top: -5%;
+        }
+    
+        100% {
+            left: 50%;
+            top: 0px;
+        }
+    }
+    
+    @keyframes contact__right-animation {
+        0% {
+            right: 50%;
+            top: -5%;
+        }
+    
+        100% {
+            right: 50%;
+            top: 0;
+        }
+    }
+    
+}
