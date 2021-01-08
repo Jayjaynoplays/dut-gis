@@ -18,16 +18,14 @@ a{
 .navbar--wrapper{
     width: 100%;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top:0;  
+    position: fixed;  
 }
 .navbar--container{
-    width: auto;
+    width: 100%;
     height: 100%;
-    display: flex;  
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 .navbar--logo img{
     width: 100px;
@@ -35,6 +33,9 @@ a{
 }
 .navbar--compo{
     padding-left: 600px;
+}
+.bars--icon{
+    display: none;
 }
 .navbar--compo a{
     font-size: large;
@@ -68,7 +69,7 @@ a{
 .home--content{
     width: 50%;
     padding: 130px 200px 0 200px;
-    z-index: 10000;
+    z-index: 100;
 }
 .home--title{
     color: white;
@@ -127,12 +128,72 @@ a{
     .home--text{
         font-size: 20px;
     }
-  }
-  /* Medium devices (tablets, less than 992px) */
-  @media (max-width: 991.98px) {
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
     .home--wrapper{
         border-radius: 0% 0% 150% 150%/0% 0% 20% 20%;
-    } 
+    }
+    .navbar--wrapper{
+        justify-content: initial;
+        z-index: 1300;
+    }
+    .navbar--container{
+        position: relative;
+        background-color: #212832;
+        justify-content: start;
+    }
+
+    .navbar--logo{
+        position: absolute;
+        left: 3%;
+    }
+
+    .bars--icon{
+        position: absolute;
+        display: block;
+        left: 90%;
+        color: white;
+    }
+    .navbar--compo a{
+        display: none;
+    }
+    .navbar--compo button{
+        display: none;
+    }
+
+    .navbar--container.responsive{
+        position: relative;
+        height: 100%;
+    }
+    .navbar--container.responsive .navbar--logo{
+        position: absolute;
+        z-index: 10000;
+    }
+    .navbar--compo.responsive{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        background-color: #212832;
+        align-items: start;
+        padding-left: 0px;
+    }
+    .navbar--compo.responsive a {
+        display: block;
+        padding: 20px;
+    }
+    .navbar--wrapper.responsive .bars--icon{
+        position: absolute;
+        right: 1%;
+        top: 0%;
+        transform: translate(0, -50%);
+    }
+    
+    
+    
     .home--image{
         display: none;
     }
@@ -149,12 +210,18 @@ a{
   }
   /* Small devices (landscape phones, less than 768px) */
   @media (max-width: 767.98px) { 
+    .navbar--logo{
+        left: 2%;
+    }
     .home--content{
         padding: 70px 10px 0 20px;
     }
   }
   /* X-Small devices (portrait phones, less than 576px) */
   @media (max-width: 575.98px) { 
+    .bars--icon{
+        left: 87%;
+    }
     .home--content{
         padding: 30px 10px 0 20px;
     }
@@ -165,7 +232,16 @@ a{
         font-size: 25px;
     }
   }
-  @media (max-width: 410.98px) { 
+  @media (max-width: 410.98px) {
+    .navbar--wrapper{
+        height: 60px;
+    }
+    .navbar--logo img{
+        width: 60px;
+    } 
+    .bars--icon{
+        font-size: 3.0vw;
+    }
     .home--content{
         padding: 10px 10px 0 20px;
     }
