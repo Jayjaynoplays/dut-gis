@@ -36,8 +36,8 @@
 <body>
     <div id="app">
         <!-- HOME SECTION!!!! -->
-        <section id="home" style="padding-bottom: 100px;">
-            <div class="home--wrapper">
+        <section id="home">
+            <div class="home--wrapper" style="padding-bottom: 100px;">
                 <div class="navbar--wrapper">
                     <div class="navbar--container" id="navbar">
                         <div class="navbar--logo">
@@ -46,10 +46,10 @@
                             </a>
                         </div>
                         <div class="navbar--compo" id="navbar--compo">
-                            <a href="#home" id="homenav" >Home</a>
-                            <a href="#map" id="mapnav">Map</a>
-                            <a href="#about" id="aboutnav">About Us</a>
-                            <a href="#contact" id="contactnav">Contact</a>
+                            <a href="#home" id="homenav" onclick="openNav()">Home</a>
+                            <a href="#map" id="mapnav" onclick="openNav()">Map</a>
+                            <a href="#about" id="aboutnav" onclick="openNav()">About Us</a>
+                            <a href="#contact" id="contactnav" onclick="openNav()">Contact</a>
                             <button class="btn--download">DOWNLOAD NOW</button>
                         </div>
                         <a class="bars--icon" onclick="openNav()">
@@ -75,11 +75,11 @@
         <!-- END HOME SECTION!!!! -->
         <!-- MAP SECTION!!!! -->
         <section id="map">
-            <div class="map--container" style="padding-top: 50px; padding-bottom: 100px;">
-                <div class="map--image">
+            <div class="map--container" id="map--containerA" style="padding-top: 100px; padding-bottom: 100px;">
+                <div class="map--image" id="map--imageA">
                     <img src="../assets/map_image.png" alt="map-image">
                 </div>
-                <div class="map--content--wrapper">
+                <div class="map--content--wrapper" id="map--content--wrapperA">
                     <div class="map--content--top">
                         <h1 class="map--content--top--title">Here's What You Get</h1>
                         <p class="map--content--top--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi nemo voluptatem minima consequuntur</p>
