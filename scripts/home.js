@@ -17,15 +17,15 @@ if (window.innerWidth > 400) {
       e.style.animationDuration = "0.45s";
     }, 700);
   });
-  
+
   window.addEventListener("scroll", () => {
     var z = document.getElementById("home--contentA");
     var e = document.getElementById("home--imageA");
     var f = document.getElementById("home--content--container");
     const scrollFromTop = window.pageYOffset;
-    if(scrollFromTop >=400){
-      f.style.display= "none";
-    }else {
+    if (scrollFromTop >= 400) {
+      f.style.display = "none";
+    } else {
       f.style.display = "flex";
       z.style.animation = "floatBubble";
       e.style.animation = "floatBubble";
