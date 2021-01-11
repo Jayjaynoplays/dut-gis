@@ -1,6 +1,6 @@
 @-webkit-keyframes floatBubble {
   from {
-    top: 70px;
+    top: 100px;
     -webkit-animation-timing-function: ease-in;
     opacity: 0;
   }
@@ -10,6 +10,12 @@
     -webkit-animation-timing-function: ease-in;
     opacity: 1;
   }
+}
+
+#home{
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/bg-pattern.png");
 }
 
 .home--wrapper {
@@ -97,7 +103,7 @@
   -webkit-animation-direction: alternate;
 }
 .home--title {
-  color: white;
+  color: rgb(244,160,0);
   font-size: 30px;
 }
 .home--text {
