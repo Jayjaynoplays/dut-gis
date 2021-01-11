@@ -62,6 +62,10 @@
   color: rgb(221, 225, 240);
 }
 
+.active{
+  color: rgb(221, 225, 240) !important;
+}
+
 .btn--download {
   padding: 10px;
   margin-left: 40px;
