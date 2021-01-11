@@ -49,3 +49,37 @@ if (window.innerWidth > 991.98) {
     });
   });
 }
+
+window.addEventListener("load", () => {
+  document.getElementById("homenav").classList.add("active");
+  window.addEventListener("scroll", () => {
+    var home = document.getElementById("home");
+    var homePosition = home.getBoundingClientRect();
+    switch (true) {
+      case homePosition.top >= -590:
+        document.getElementById("homenav").classList.add("active");
+        // document.getElementById("mapnav").classList.remove("active");
+        document.getElementById("aboutnav").classList.remove("active");
+        document.getElementById("contactnav").classList.remove("active");
+        break;
+      // case homePosition.top >= xxx:
+      //   document.getElementById("homenav").classList.remove("active");
+      //   // document.getElementById("mapnav").classList.add("active");
+      //   document.getElementById("aboutnav").classList.remove("active");
+      //   document.getElementById("contactnav").classList.remove("active");
+      //   break;
+      case homePosition.top >= -1268:
+        document.getElementById("homenav").classList.remove("active");
+        // document.getElementById("mapnav").classList.remove("active");
+        document.getElementById("aboutnav").classList.add("active");
+        document.getElementById("contactnav").classList.remove("active");
+        break;
+      default:
+        document.getElementById("homenav").classList.remove("active");
+        // document.getElementById("mapnav").classList.remove("active");
+        document.getElementById("aboutnav").classList.remove("active");
+        document.getElementById("contactnav").classList.add("active");
+        break;
+    }
+  });
+});
