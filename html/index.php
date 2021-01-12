@@ -1,6 +1,6 @@
   
 <?php
 
-header("D:/project/DSC/dut-gis/html/introduction.html");
+<?php include_once("index.html"); ?>
 
 ?>
