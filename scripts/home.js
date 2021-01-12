@@ -97,7 +97,7 @@ window.addEventListener("load", () => {
           document.getElementById("aboutnav").classList.remove("active");
           document.getElementById("contactnav").classList.remove("active");
           break;
-        case homePosition.top >= -1990:
+        case homePosition.top >= -2000:
           document.getElementById("homenav").classList.remove("active");
           document.getElementById("mapnav").classList.remove("active");
           document.getElementById("aboutnav").classList.add("active");
