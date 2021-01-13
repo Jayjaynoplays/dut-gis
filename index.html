@@ -66,7 +66,7 @@
                 </div>
                 <div class="home--content--wrapper">
                     <div class="home--content--container" id="home--content--container">
-                        <div class="home--content"id="home--contentA">
+                        <div class="home--content" id="home--contentA">
                             <div class="home--title">
                                 <h1>Geographic Information System</h1>
                             </div>
@@ -76,7 +76,7 @@
                                     nesciunt facere sequi, ipsa asperiores soluta.</p>
                             </div>
                         </div>
-                        <div class="home--image"id="home--imageA"></div>
+                        <div class="home--image" id="home--imageA"></div>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
         <!-- MAP SECTION!!!! -->
         <section id="map">
             <div class="map--container" id="map--containerA" style="padding-top: 100px; padding-bottom: 100px;">
-                <div class="map--image"data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                <div class="map--image" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
                     <img src="./assets/map_image.png" alt="map-image">
                 </div>
                 <div class="map--content--wrapper">
@@ -359,9 +359,13 @@
     <script>
         AOS.init();
         AOS.init({
-            once: false, 
+            once: false,
             mirror: true,
         });
+        $(document).ready(function () {
+            $(this).scrollTop(0);
+        });
+
     </script>
 </body>
 
