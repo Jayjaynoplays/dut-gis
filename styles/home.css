@@ -231,9 +231,6 @@
   .home--image {
     display: none;
   }
-  .home--content--container {
-    display: flex;
-  }
   .home--content {
     width: 100%;
     padding: 80px 10px 0 20px;
@@ -294,10 +291,6 @@
   .bars--icon {
     font-size: 3vw;
   }
-  .home--content--container {
-    display: flex;
-  }
-
   .home--content {
     padding: 10px 10px 0 20px;
   }

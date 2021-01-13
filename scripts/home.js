@@ -50,7 +50,8 @@ window.addEventListener("scroll", () => {
     e.style.animationDuration = "0.45s";
   }
 });
-window.addEventListener("touchmove", () => {
+
+document.addEventListener("touchmove", () => {
   var z = document.getElementById("home--contentA");
   var e = document.getElementById("home--imageA");
   var f = document.getElementById("home--content--container");
