@@ -1,10 +1,9 @@
 #map {
   width: 100%;
-  height: auto;
+  height: 652.4px;
   background-image: url("../assets/bg-pattern.png");
   display: flex;
   justify-content: center;
-  height: 652.4px;
 }
 
 @-webkit-keyframes floatLeftIn {
@@ -36,12 +35,11 @@
 }
 
 .map--container {
-  width: auto;
+  width: 80%;
   position: relative;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  width: 80%;
 }
 
 .map--image {
@@ -94,9 +92,9 @@
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    #map{
-        height: auto;
-    }
+  #map {
+    height: 1010px;
+  }
   .map--container {
     flex-direction: column-reverse;
   }
@@ -116,6 +114,9 @@
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  #map {
+    height: 1396px;
+  }
   .map--content--bot {
     flex-direction: column;
   }
@@ -132,7 +133,6 @@
   .map--image img {
     width: 100%;
   }
-
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
@@ -140,7 +140,6 @@
 }
 
 @media (max-width: 410.98px) {
-
 }
 
 @media (max-width: 321px) {

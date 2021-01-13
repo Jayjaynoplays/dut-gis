@@ -55,7 +55,6 @@ window.addEventListener("load", () => {
   window.addEventListener("scroll", () => {
     var home = document.getElementById("home");
     var homePosition = home.getBoundingClientRect();
-    console.log(homePosition.top);
     if (window.innerWidth >= 991.98) {
       switch (true) {
         case homePosition.top >= -590:
@@ -108,7 +107,6 @@ window.addEventListener("load", () => {
           document.getElementById("mapnav").classList.remove("active");
           document.getElementById("aboutnav").classList.remove("active");
           document.getElementById("contactnav").classList.add("active");
-          console.log("deleted")
           break;
       }
     }
