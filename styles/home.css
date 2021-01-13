@@ -130,6 +130,9 @@
   .navbar--compo a {
     padding-left: 30px;
   }
+  .navbar--compo a:hover {
+    color: rgb(143, 162, 237);;
+  }
   .home--content {
     padding: 50px 130px 0 100px;
   }
@@ -190,9 +193,6 @@
   }
   .navbar--compo a {
     display: none;
-  }
-  .navbar--compo a:hover {
-    color: rgb(143, 162, 237);;
   }
   
   .navbar--compo button {

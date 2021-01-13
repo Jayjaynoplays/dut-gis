@@ -1,7 +1,8 @@
 function openNav() {
   var x = document.getElementById("navbar");
-  if (x.className == "navbar--container") x.className += " responsive";
-  else x.className = "navbar--container";
+  x.className == "navbar--container"
+    ? (x.className += " responsive")
+    : (x.className = "navbar--container");
 }
 
 if (window.innerWidth > 991.98) {
@@ -23,15 +24,12 @@ window.addEventListener("load", () => {
   var z = document.getElementById("home--contentA");
   var e = document.getElementById("home--imageA");
   var f = document.getElementById("home--content--container");
-  window.setTimeout(() => {
-    f.style.display = "flex";
-    z.style.animation = "floatBubble";
-    e.style.animation = "floatBubble";
-    z.style.animationDuration = "0.3s";
-    e.style.animationDuration = "0.45s";
-  }, 700);
+  f.style.display = "flex";
+  z.style.animation = "floatBubble";
+  e.style.animation = "floatBubble";
+  z.style.animationDuration = "0.5s";
+  e.style.animationDuration = "0.7s";
 });
-
 
 window.addEventListener("scroll", () => {
   var z = document.getElementById("home--contentA");
@@ -39,7 +37,6 @@ window.addEventListener("scroll", () => {
   var f = document.getElementById("home--content--container");
   var home = document.getElementById("home");
   var homePosition = home.getBoundingClientRect();
-  console.log(homePosition.top);
   if (homePosition.top <= -520) {
     f.style.display = "none";
   } else {
@@ -50,46 +47,28 @@ window.addEventListener("scroll", () => {
     e.style.animationDuration = "0.45s";
   }
 });
-
-document.addEventListener("touchmove", () => {
-  var z = document.getElementById("home--contentA");
-  var e = document.getElementById("home--imageA");
-  var f = document.getElementById("home--content--container");
-  var home = document.getElementById("home");
-  var homePosition = home.getBoundingClientRect();
-  console.log(homePosition.top);
-  if (homePosition.top <= -520) {
-    f.style.display = "none";
-  } else {
-    f.style.display = "flex";
-    z.style.animation = "floatBubble";
-    e.style.animation = "floatBubble";
-    z.style.animationDuration = "0.3s";
-    e.style.animationDuration = "0.45s";
-  }
-});
-
 
 window.addEventListener("load", () => {
   document.getElementById("homenav").classList.add("active");
   window.addEventListener("scroll", () => {
     var home = document.getElementById("home");
     var homePosition = home.getBoundingClientRect();
+    console.log(homePosition.top);
     if (window.innerWidth >= 991.98) {
       switch (true) {
-        case homePosition.top >= -590:
+        case homePosition.top >= -530:
           document.getElementById("homenav").classList.add("active");
           document.getElementById("mapnav").classList.remove("active");
           document.getElementById("aboutnav").classList.remove("active");
           document.getElementById("contactnav").classList.remove("active");
           break;
-        case homePosition.top >= -1000:
+        case homePosition.top >= -1249:
           document.getElementById("homenav").classList.remove("active");
           document.getElementById("mapnav").classList.add("active");
           document.getElementById("aboutnav").classList.remove("active");
           document.getElementById("contactnav").classList.remove("active");
           break;
-        case homePosition.top >= -2090:
+        case homePosition.top >= -1948:
           document.getElementById("homenav").classList.remove("active");
           document.getElementById("mapnav").classList.remove("active");
           document.getElementById("aboutnav").classList.add("active");
@@ -104,19 +83,19 @@ window.addEventListener("load", () => {
       }
     } else {
       switch (true) {
-        case homePosition.top >= -490:
+        case homePosition.top >= -649:
           document.getElementById("homenav").classList.add("active");
           document.getElementById("mapnav").classList.remove("active");
           document.getElementById("aboutnav").classList.remove("active");
           document.getElementById("contactnav").classList.remove("active");
           break;
-        case homePosition.top >= -900:
+        case homePosition.top >= -2045:
           document.getElementById("homenav").classList.remove("active");
           document.getElementById("mapnav").classList.add("active");
           document.getElementById("aboutnav").classList.remove("active");
           document.getElementById("contactnav").classList.remove("active");
           break;
-        case homePosition.top >= -2000:
+        case homePosition.top >= -3585:
           document.getElementById("homenav").classList.remove("active");
           document.getElementById("mapnav").classList.remove("active");
           document.getElementById("aboutnav").classList.add("active");
