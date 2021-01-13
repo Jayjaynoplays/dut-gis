@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
     var homePosition = home.getBoundingClientRect();
     // console.log(homePosition.top);
     // if (homePosition <= 290 || homePosition >= 1498) {
-    if (homePosition.top >= -500) {
+    if (homePosition.top >= -150 || homePosition.top <= -1945) {
       f.style.display = "none";
     } else {
       f.style.display = "flex";
