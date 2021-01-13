@@ -32,7 +32,25 @@ window.addEventListener("load", () => {
   }, 700);
 });
 
+
 window.addEventListener("scroll", () => {
+  var z = document.getElementById("home--contentA");
+  var e = document.getElementById("home--imageA");
+  var f = document.getElementById("home--content--container");
+  var home = document.getElementById("home");
+  var homePosition = home.getBoundingClientRect();
+  console.log(homePosition.top);
+  if (homePosition.top <= -520) {
+    f.style.display = "none";
+  } else {
+    f.style.display = "flex";
+    z.style.animation = "floatBubble";
+    e.style.animation = "floatBubble";
+    z.style.animationDuration = "0.3s";
+    e.style.animationDuration = "0.45s";
+  }
+});
+window.addEventListener("touchmove", () => {
   var z = document.getElementById("home--contentA");
   var e = document.getElementById("home--imageA");
   var f = document.getElementById("home--content--container");
