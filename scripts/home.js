@@ -21,8 +21,10 @@ window.addEventListener("scroll", () => {
   var z = document.getElementById("home--contentA");
   var e = document.getElementById("home--imageA");
   var f = document.getElementById("home--content--container");
-  const scrollFromTop = window.pageYOffset;
-  if (scrollFromTop >= 400) {
+  var home = document.getElementById("home");
+  var homePosition = home.getBoundingClientRect();
+  console.log(homePosition.top);
+  if (homePosition.top <= -520) {
     f.style.display = "none";
   } else {
     f.style.display = "flex";

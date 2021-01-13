@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
     var f = document.getElementById("map--containerA");
     var home = document.getElementById("home");
     var homePosition = home.getBoundingClientRect();
-    console.log(homePosition.top);
+    // console.log(homePosition.top);
     // if (homePosition <= 290 || homePosition >= 1498) {
     if (homePosition.top >= -500) {
       f.style.display = "none";
