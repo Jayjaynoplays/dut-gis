@@ -10,7 +10,7 @@
     display: flex;
     position: relative;
     width: auto;
-    height: 100vh;
+    height: auto;
 }
 
 .contact__card-detail--wrapper {
