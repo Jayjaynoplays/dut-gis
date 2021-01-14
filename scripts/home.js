@@ -9,13 +9,13 @@ function openNav() {
 if (window.innerWidth > 991.98) {
   window.addEventListener("load", () => {
     window.addEventListener("scroll", () => {
-      var y = document.getElementById("navbar");
+      var y = document.getElementsByClassName("navbar--wrapper");
       const scrollFromTop = window.pageYOffset;
       if (scrollFromTop > 50) {
-        y.style.backgroundColor = "rgb(33,40,50)";
+        y[0].style.backgroundColor = "rgb(33,40,50)";
       } else {
-        y.style.backgroundColor = "transparent";
-        y.style.transition = "background 0.3s ease";
+        y[0].style.backgroundColor = "transparent";
+        y[0].style.transition = "background 0.3s ease";
       }
     });
   });
