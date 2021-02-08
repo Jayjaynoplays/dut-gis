@@ -6,6 +6,17 @@ function openNav() {
     : (x.className = "navbar--container");
 }
 
+// $(document).ready(function(){
+//   console.log("help")
+//   $("navbar--more--compo").click(function(){
+//     alert( "Handler for .click() called." );
+//     this.className == "navbar--container"
+//     ?(this.className += " responsive")
+//     : (this.className = "navbar--container");
+//   });
+// });
+
+
 if (window.innerWidth > 991.98) {
   window.addEventListener("load", () => {
     window.addEventListener("scroll", () => {
