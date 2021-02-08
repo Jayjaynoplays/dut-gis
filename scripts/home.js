@@ -68,7 +68,7 @@ window.addEventListener("load", () => {
     console.log(homePosition.top);
     if (window.innerWidth >= 991.98) {
       switch (true) {
-        case homePosition.top >= -530:
+        // case homePosition.top >= -530:
           document.getElementById("homenav").classList.add("active");
           document.getElementById("mapnav").classList.remove("active");
           document.getElementById("aboutnav").classList.remove("active");
