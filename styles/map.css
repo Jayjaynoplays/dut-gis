@@ -33,10 +33,11 @@
 }
 .map--content--top--title {
   font-size: 36px;
+  font-weight: 700;
   color: rgb(219, 68, 55);
 }
 .map--content--top--text {
-  font-size: 20px;
+  font-size: 22px;
 }
 .map--content--bot {
   width: 100%;
@@ -50,6 +51,9 @@
 }
 .map--content--bot--compo p {
   font-size: 15px;
+}
+.map--content--bot--compo h3{
+  font-size: 21px;
 }
 
 /* X-Large devices (large desktops, less than 1400px) */

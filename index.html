@@ -45,8 +45,9 @@
         <!-- HOME SECTION!!!! -->
         <section id="home">
             <div class="home--wrapper" style="padding-bottom: 100px;">
-                <div class="navbar--wrapper">
-                    <div class="navbar--container" id="navbar">
+                <div class="navbar--wrapper" >
+                    <div class="navbar--container" id="navbar" >
+                       
                         <div class="navbar--logo">
                             <a href="#home">
                                 <img src="./assets/logo.png" alt="logo">
@@ -57,7 +58,7 @@
                             <a href="#map" id="mapnav" onclick="openNav()">Map</a>
                             <a href="#about" id="aboutnav" onclick="openNav()">About Us</a>
                             <a href="#contact" id="contactnav" onclick="openNav()">Contact</a>
-                            <button class="btn--download">DOWNLOAD NOW</button>
+                            <button class="navbar--btn" style="font-size: large;"><i class="far fa-arrow-alt-circle-down fa-2x"></i></button>
                         </div>
                         <a class="bars--icon" onclick="openNav()">
                             <i class="fa fa-bars fa-3x"></i>
@@ -71,9 +72,11 @@
                                 <h1>Geographic Information System</h1>
                             </div>
                             <div class="home--text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad provident id maxime
-                                    accusantium nemo dolores corporis sint alias quis magni cum impedit quidem error
-                                    nesciunt facere sequi, ipsa asperiores soluta.</p>
+                                <p>Là hệ thống bản đồ trường Đại học Bách Khoa - Đại học Đà Nẵng phát triển bởi DSC - DUT. Ứng dụng sử dụng công nghệ kĩ thuật mới giúp người dùng có thể tra cứu và đi lại trong trường một cách dễ dàng và nhanh chóng.</p>
+                            </div>
+                            <div class="home--btn--wrapper">
+                                <button class="home--btn" style="background-color: rgb(255, 186, 2);">DOWNLOAD NOW</button>
+                                <button class="home--btn" id="AA" onclick="location.href='#map'">SEE MORE</button>
                             </div>
                         </div>
                         <div class="home--image" id="home--imageA"></div>
@@ -90,35 +93,32 @@
                 </div>
                 <div class="map--content--wrapper">
                     <div class="map--content--top" data-aos="fade-left" data-aos-duration="700">
-                        <h1 class="map--content--top--title">Here's What You Get</h1>
-                        <p class="map--content--top--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Exercitationem commodi nemo voluptatem minima consequuntur</p>
+                        <h1 class="map--content--top--title">DUT-GIS ĐEM LẠI</h1>
+                        <p class="map--content--top--text">Giải pháp thông minh được phát triển trên nền tảng website và ứng dụng dành cho điện thoại di động với các tính năng:</p>
                     </div>
                     <div class="map--content--bot">
                         <div class="bot--column" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                             <div class="map--content--bot--compo">
-                                <h3>This Is Tile 1</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem praesentium</p>
+                                <h3>Tìm kiếm thông tin địa điểm</h3>
+                                <p>DUT - GIS cho phép bạn biết được vị trí hiện tại, thông tin và vị trí các tòa nhà trong khuôn viên trường.</p>
                                 <a href="">Learn more <i class="fas fa-arrow-right"></i></a>
                             </div>
                             <div class="map--content--bot--compo">
-                                <h3>This Is Tile 3</h3>
-                                <p> esse molestiae in maiores, dolores sit cupiditate iste. Dignissimos, expedita and
-                                    baczah</p>
+                                <h3>Tìm đường đi</h3>
+                                <p>Tính năng chỉ dẫn đường đi sẽ cho bạn dễ dàng chọn tuyến đường ngắn nhất đến địa điểm mà bạn mong muốn chỉ với mã QR được dán trước mỗi phòng.</p>
                                 <a href="">Learn more <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
-                        <div class="bot--column" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="bot--column" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
                             <div class="map--content--bot--compo">
-                                <h3>This Is Tile 2</h3>
-                                <p>Lorem ipsum dolor sit amet consectetmaiores, dolores sit cupiditate iste.
-                                    Dignissimos.</p>
+                                <h3>Tra cứu thông tin phòng học
+                                </h3>
+                                <p>DUT - GIS giúp bạn tra cứu thông tin phòng học, giảng viên và lớp học phần vào một thời điểm xác định.</p>
                                 <a href="">Learn more <i class="fas fa-arrow-right"></i></a>
                             </div>
                             <div class="map--content--bot--compo">
-                                <h3>This Is Tile 4</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem praes ansd abacluw
-                                    but sacky looz</p>
+                                <h3>Thông báo sự kiện của trường</h3>
+                                <p>Kết nối đoàn trường và CLB đến gần sinh viên, DUT - GIS thông báo thời gian địa điểm diễn ra, chia sẻ thông tin sự kiện đến các bạn có nhu cầu tham gia.</p>
                                 <a href="">Learn more <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
